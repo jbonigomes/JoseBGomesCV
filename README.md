@@ -2,7 +2,7 @@
 
 This is the CV builder for Jose B. Gomes, a compiled version can be downloaded from:
 
-	test
+	https://github.com/jbonigomes/JoseBGomesCV/blob/master/JoseBGomes.pdf?raw=true
 
 ## To compile html to pdf
 
