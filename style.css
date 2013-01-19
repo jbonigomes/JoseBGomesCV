@@ -11,13 +11,13 @@ a									{ color: #fff; text-decoration: none; }
 li									{ list-style-type: none; }
 
 .contentWrapper						{ margin-bottom: 50px; }
-.itemWrapper						{ margin-bottom: 20px; overflow: hidden; }
-.grade								{ position: absolute; top: 1239px; left: -2px; font-style: italic; font-size: 12px; -webkit-transform:rotate(-90deg); }
+.itemWrapper						{ margin-bottom: 20px; overflow: hidden; padding: 2px 0; }
+.grade								{ position: absolute; top: 1239px; left: -5px; font-style: italic; font-size: 12px; -webkit-transform:rotate(-90deg); }
 
-#grade1								{ top: 885px; left: 1px; }
-#grade2								{ top: 1018px; }
-#grade3								{ top: 1126px; }
-#grade4								{ top: 1212px; }
+#grade1								{ top: 905px; left: -2px; }
+#grade2								{ top: 1039px; }
+#grade3								{ top: 1151px; }
+#grade4								{ top: 1241px; }
 
 ul#top								{ background-color: #333; overflow: hidden; padding: 10px 5px; }
 #top li								{ float: left; padding: 0; margin-right: 40px; }
@@ -33,19 +33,19 @@ ul#top								{ background-color: #333; overflow: hidden; padding: 10px 5px; }
 #top-box-right						{ width: 280px; float: left; padding-left: 185px; padding-top: 20px; line-height: 16px; }
 #top-box-left						{ width: 518px; float: left; text-align: right; }
 
-#bottom								{ background-color: #333; padding: 3px; text-align: center; }
+#bottom								{ background-color: #333; padding: 3px; text-align: center; margin-top: -7px; }
 #bottom a							{ font-size: 8px; }
 
 #content							{ padding: 10px 20px; overflow: hidden; }
 
-#top-box p							{ border-top: 1px dashed #777; border-bottom: 1px dashed #777; padding: 20px 170px; margin: 15px 0 23px 0; }
+#top-box p							{ border-top: 1px dashed #777; border-bottom: 1px dashed #777; padding: 20px 172px; margin: 15px 0 23px 0; }
 
 #center-box							{ overflow: hidden; }
 #center-box ul						{ margin-left: 15px; }
 
 #center-box-left					{ float: left; width: 743px; }
-#center-box-left p					{ float: left; width: 448px; padding-right: 30px; }
-#center-box-left ul					{ float: left; width: 250px; }
+#center-box-left p					{ float: left; width: 448px; padding-right: 20px; }
+#center-box-left ul					{ float: left; width: 260px; }
 
 #center-box-right					{ float: left; width: 250px; }
 #center-box-right ul li				{ overflow: hidden; padding: 3px 0; }
