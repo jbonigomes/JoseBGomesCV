@@ -27,3 +27,11 @@ This CV has been compiled using wkhtmltopdf version 0.10.0 rc2 on a Windows XP m
 To download wkhtmltopdf, go to:
 
 	http://code.google.com/p/wkhtmltopdf/
+
+This CV uses Raphael.js for creating icons, for more information, go to:
+
+	http://raphaeljs.com/
+
+This CV has been developed on a Mac OSX machine using Sublime text 2:
+
+	http://www.sublimetext.com/
