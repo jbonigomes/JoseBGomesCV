@@ -2,8 +2,8 @@
 
 #wrapper							{ width: 1033px; line-height: 22px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #444; }
 
-h1									{ color: #e72; font-weight: bold;	font-size: 65px; line-height: 50px; margin-top: 30px; }
-h2									{ color: #777; font-weight: normal; font-size: 28px; line-height: 30px; font-style: italic; }
+h1									{ color: #e72; font-weight: bold;	font-size: 65px; line-height: 50px; margin-top: 30px; text-align: center; }
+h2									{ color: #777; font-weight: normal; font-size: 28px; line-height: 30px; font-style: italic; text-align: center; }
 h3									{ color: #555; font-weight: normal; font-size: 30px; line-height: 30px; margin-bottom: 10px; }
 h3 span								{ color: #e72; font-weight: normal; font-size: 30px; padding-right: 3px; }
 h4									{ color: #e72; font-weight: bold;	font-size: 16px; margin: 10px 0 0 10px; }
@@ -19,9 +19,8 @@ li									{ list-style-type: none; }
 #grade3								{ top: 1151px; }
 #grade4								{ top: 1241px; }
 
-ul#top								{ background-color: #333; overflow: hidden; padding: 10px 5px; }
-#top li								{ float: left; padding: 0; margin-right: 40px; }
-#top li:last-child					{ margin-right: 0; }
+ul#top								{ background-color: #333; overflow: hidden; padding: 10px; color: #fff; }
+#top li								{ float: left; padding: 0; margin: 0 443px; }
 #top span							{ padding-top: 3px; }
 
 #top span, #top-box-right span		{ width: 17px; height: 17px; display: block; float: left; margin-right: 5px; }
