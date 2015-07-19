@@ -22,7 +22,7 @@ To download the grayscale version:
 
 ## To compile grayscaled low res
 
-	wkhtmltopdf -L 0 -T 0 -B 0 -R 0 -l -g JoseBGomes.xhtml JoseBGomes.pdf
+	~/wkhtmltopdf -L 0 -T 0 -B 0 -R 0 -l -g JoseBGomes.xhtml JoseBGomes.pdf
 	
 ## Notes
 
