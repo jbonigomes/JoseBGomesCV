@@ -1,35 +1,28 @@
-# Jose B. Gomes CV
+# CV Builder for Jose B. Gomes
 
-This is the CV builder for Jose B. Gomes, a compiled version can be downloaded from:
+## Requirements
 
-	https://github.com/jbonigomes/JoseBGomesCV/blob/master/JoseBGomes.pdf?raw=true
-	
-To download the grayscale version:
+    $ npm install -g html-pdf
+    $ gem install sass
 
-	https://github.com/jbonigomes/JoseBGomesCV/blob/master/JoseBGomes_bw.pdf?raw=true
+## Development
 
-## To compile html to pdf
+    $ sass --watch index.scss:index.css
 
-	wkhtmltopdf -L 0 -T 0 -B 0 -R 0 JoseBGomes.xhtml JoseBGomes.pdf
+At this point you should be able to open your index.html in the browser.
 
-## To compile grayscale
+Please note:
 
-	wkhtmltopdf -L 0 -T 0 -B 0 -R 0 -g JoseBGomes.xhtml JoseBGomes.pdf
+  - This is not running a local server, we are simply opening the local file
+  - Do not make changes to the .css file, make your changes on the .scss
+  - There is no auto-refresh in the browser
+  - Please open a pull request if you want to integrate fancier options such as:
+    - Gulp
+    - A local server
+    - Proper builds
+    - Live reload or Browser sync
+    - Add bower
 
-## To compile in low res
+## Buiding the PDF
 
-	wkhtmltopdf -L 0 -T 0 -B 0 -R 0 -l JoseBGomes.xhtml JoseBGomes.pdf
-
-## To compile grayscaled low res
-
-	wkhtmltopdf -L 0 -T 0 -B 0 -R 0 -l -g JoseBGomes.xhtml JoseBGomes.pdf
-	
-## Notes
-
-To download wkhtmltopdf, go to:
-
-	http://wkhtmltopdf.org/
-
-This CV uses Raphael.js for creating icons, for more information, go to:
-
-	http://raphaeljs.com/
+    $ sass index.scss index.css; html-pdf index.html index.pdf; open index.pdf
