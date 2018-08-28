@@ -21,9 +21,9 @@ address:
   - L36 3AB
   - Liverpool
   - UK
-personal_statement: Full stack software developer and tech entrepreneur
-  passionate about exploring cutting edge technologies that add value and
-  deliver a delightful experience to my customers and their business
+personal_statement: Full stack software developer passionate about exploring
+  cutting edge technologies that add value and deliver a delightful experience
+  to customers and their business
 employment:
   - date: Sep 18 - date
     position: JavaScript Engineer
@@ -31,36 +31,36 @@ employment:
     description: I took this new challenge as a JavaScript Engineer for the
       channels engineering team at Barclays. I don't yet know the challenges
       this new position will bring, but I see it as a big opportunity to take
-      part on developing software that has a strong impact on customers along
-      with a world class team.
+      part on developing software that has a strong impact on customers while
+      working with a world class team.
   - date: Jan 17 - Sep 18
     position: Software Developer
     employer: Cybertill Ltd
     description:  Working for Cybertill Ltd, I had the challenge to help
       modernising a large multi-channel retail and ePOS system written in
-      Symfony/PHP. As most legacy software, issues revolve around performance
-      and maintainability. I tackled some of those issues introducing new
-      technologies, such as Angular, Typescript, Elastic Search and GraphQL.
+      Symfony/PHP. As most legacy software, issues revolved around performance
+      and maintainability. I tackled some of those issues proposing and
+      introducing new technologies, such as Angular, Typescript, Elastic Search
+      and GraphQL.
   - date: Sep 14 - Dec 16
     position: Freelancer / Entrepreneur
     employer: Various
     description: During my final year at university and my first year as a
-      graduate I choose the flexibility of remote work, juggling academic
-      assignments and client base opportunities. During that period, I also co
-      founded Backbone Labs, a company whose aimed to develop a digitised
-      version of RushHourCrush (a section from a famous newspaper in the UK).
-      Along with that, I had the chance to work with well renowned digital
-      agencies, such as Cyber Interactive, Capella and Thinkup.io (former
-      Believe Creative) working on projects for large clients such as Nominent,
-      Greenergy and Future First.
+      graduate, while juggling academic assignments and client based
+      opportunities, I choose the flexibility of remote work. During that
+      period, I also co founded Backbone Labs, a company aimed at developing a
+      digitised version of RushHourCrush (a section from a famous newspaper in
+      the UK). Along with that, I had the chance to work with well renowned
+      digital agencies, such as Cyber Interactive, Capella and Thinkup.io
+      (former Believe Creative) working on projects for large clients such as
+      Nominent, Greenergy and Future First.
   - date: Mar 14 - Aug 14
     position: Application Developer
     employer: Upcast Social
-    description: At Upcast Social, I broaden and deepen my knowledge in the
-      realm of software development. Working in agile team that delivered the
-      tools to manage online advertisement for Apple, Twitter and Facebook.
-      Working to tight deadlines with a fantastic team of developers I felt like
-      my confidence and skills as a developer sky rocketed.
+    description: At Upcast Social, I broaden and deepen my knowledge and
+      confidence in the realm of software development. Working in Agile
+      environment along with a talented team that delivered the tools to create
+      and manage online advertisement campaigns for Apple, Twitter and Facebook.
   - date: Mar 13 - Mar 14
     position: Software Developer
     employer: Cyber Interactive
@@ -71,10 +71,11 @@ employment:
     position: Junior Software Developer
     employer: CFS Europe
     description: I first started working for CFS-Europe as a Hardware and
-      Network assistant. Over the years, combining my knowledge of the company
-      products with the skills I earned during my degree, I managed to work my
+      Network assistant. Over the years, combining my knowledge of the company,
+      hard work and the skills I earned during my degree, I managed to work my
       way up to the development team in a junior position. Although a small
-      company, some of their clients ranged among the NHS, Argos and Orange.
+      company, some of the clients I worked with ranged among the NHS, Argos and
+      Orange.
 other: Other jobs included IT Support/Helpdesk, hospitality and family business.
 education:
   - date: Sep 12 - Jun 15
@@ -154,18 +155,22 @@ complex_skills:
         stars:
           - title: Git
             stars: 5
-          - title: UX/SketchApp
-            stars: 5
           - title: Gulp/Webpack
             stars: 4
           - title: UNIX
             stars: 4
+          - title: Puppeteer
+            stars: 4
+          - title: UI/UX
+            stars: 3
           - title: Jest
             stars: 3
           - title: GraphQL
             stars: 3
-          - title: Cypress/Puppeteer
+          - title: Cypress
             stars: 3
+          - title: Electron
+            stars: 2
           - title: Docker
             stars: 2
 simple_skills:

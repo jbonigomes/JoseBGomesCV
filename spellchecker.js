@@ -101,6 +101,29 @@ const spellcheckComplex = async (skills) => {
   return res;
 };
 
+const spellcheckSimple = async (skills) => {
+  const res = [];
+
+  for (let i = 0; i < skills.length; i++) {
+    res.push({
+      title: await spellchecker(skills[i].title),
+      stars: await spellchecker(skills[i].stars.map(_ => _.title).join(', '))
+    });
+  }
+
+  return res;
+};
+
+const spellcheckOther = async (skills) => {
+  const res = [];
+
+  for (let i = 0; i < skills.length; i++) {
+    res.push(await spellchecker(skills[i].label));
+  }
+
+  return res;
+};
+
 const res = async () => ({
   profession: await spellchecker(data.profession),
   personal_statement: await spellchecker(data.personal_statement),
@@ -108,11 +131,14 @@ const res = async () => ({
   other: await spellchecker(data.other),
   education: await spellCheckEdu(data.education),
   complex_skills: await spellcheckComplex(data.complex_skills),
+  simple_skills: await spellcheckSimple(data.simple_skills),
+  other_skills: await spellcheckOther(data.other_skills)
 });
 
 (async () => {
   await addWords([
     'UX',
+    'UI',
     'JS',
     'PHP',
     'BSc',
