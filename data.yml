@@ -21,7 +21,7 @@ address:
   - L36 3AB
   - Liverpool
   - UK
-personal_statement: Full stack software developer passionate about exploring
+personal_statement: Full stack software developer, passionate about exploring
   cutting edge technologies that add value and deliver a delightful experience
   to customers and their business
 employment:
@@ -29,14 +29,14 @@ employment:
     position: JavaScript Engineer
     employer: Barclays
     description: I took this new challenge as a JavaScript Engineer for the
-      channels engineering team at Barclays. I don't yet know the challenges
-      this new position will bring, but I see it as a big opportunity to take
-      part on developing software that has a strong impact on customers while
-      working with a world class team.
+      channels engineering team at Barclays. I don't yet know the what this new
+      position will bring, but I see it as a big opportunity to take part on
+      developing software that has a strong impact on customers while working
+      for a world class team.
   - date: Jan 17 - Sep 18
     position: Software Developer
     employer: Cybertill Ltd
-    description:  Working for Cybertill Ltd, I had the challenge to help
+    description: Working for Cybertill Ltd, I had the challenge to help
       modernising a large multi-channel retail and ePOS system written in
       Symfony/PHP. As most legacy software, issues revolved around performance
       and maintainability. I tackled some of those issues proposing and
@@ -52,7 +52,7 @@ employment:
       digitised version of RushHourCrush (a section from a famous newspaper in
       the UK). Along with that, I had the chance to work with well renowned
       digital agencies, such as Cyber Interactive, Capella and Thinkup.io
-      (former Believe Creative) working on projects for large clients such as
+      (former Believe Creative) working on projects for large clients among
       Nominent, Greenergy and Future First.
   - date: Mar 14 - Aug 14
     position: Application Developer
@@ -66,7 +66,8 @@ employment:
     employer: Cyber Interactive
     description: At Cyber, I had the chance to work for a small but busy web
       agency in the heart of London. Working within an Agile environment, I had
-      the chance to work with some large clients such as the RBS, JLL and Aviva.
+      the chance to interact with some large clients such as the RBS, JLL and
+      Aviva.
   - date: Oct 07 - Mar 13
     position: Junior Software Developer
     employer: CFS Europe
