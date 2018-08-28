@@ -1,0 +1,192 @@
+contact:
+  - class: fa fa-github fa-lg fa-fw
+    label: github.com/jbonigomes
+    link: https://github.com/jbonigomes
+  - class: fa fa-linkedin-square fa-lg fa-fw
+    label: linkedin.com/in/jbonigomes
+    link: http://www.linkedin.com/in/jbonigomes
+  - class: fa fa-twitter fa-lg fa-fw
+    label: twitter.com/jbonigomes
+    link: https://twitter.com/jbonigomes
+  - class: fa fa-envelope-o fa-lg fa-fw
+    label: jbonigomes@yahoo.com.br
+    link: mailto:jbonigomes@yahoo.com.br
+  - class: fa fa-phone fa-lg fa-fw
+    label: 07454 009 443
+    link: tel:+447454009443
+name: Jose B. Gomes
+profession: Software Developer
+address:
+  - 5 Rosebank Road
+  - L36 3AB
+  - Liverpool
+  - UK
+personal_statement: Full stack software developer and tech entrepreneur
+  passionate about exploring cutting edge technologies that add value and
+  deliver a delightful experience to my customers and their business
+employment:
+  - date: Sep 18 - date
+    position: JavaScript Engineer
+    employer: Barclays
+    description: I took this new challenge as a JavaScript Engineer for the
+      channels engineering team at Barclays. I don't yet know the challenges
+      this new position will bring, but I see it as a big opportunity to take
+      part on developing software that has a strong impact on customers along
+      with a world class team.
+  - date: Jan 17 - Sep 18
+    position: Software Developer
+    employer: Cybertill Ltd
+    description:  Working for Cybertill Ltd, I had the challenge to help
+      modernising a large multi-channel retail and ePOS system written in
+      Symfony/PHP. As most legacy software, issues revolve around performance
+      and maintainability. I tackled some of those issues introducing new
+      technologies, such as Angular, Typescript, Elastic Search and GraphQL.
+  - date: Sep 14 - Dec 16
+    position: Freelancer / Entrepreneur
+    employer: Various
+    description: During my final year at university and my first year as a
+      graduate I choose the flexibility of remote work, juggling academic
+      assignments and client base opportunities. During that period, I also co
+      founded Backbone Labs, a company whose aimed to develop a digitised
+      version of RushHourCrush (a section from a famous newspaper in the UK).
+      Along with that, I had the chance to work with well renowned digital
+      agencies, such as Cyber Interactive, Capella and Thinkup.io (former
+      Believe Creative) working on projects for large clients such as Nominent,
+      Greenergy and Future First.
+  - date: Mar 14 - Aug 14
+    position: Application Developer
+    employer: Upcast Social
+    description: At Upcast Social, I broaden and deepen my knowledge in the
+      realm of software development. Working in agile team that delivered the
+      tools to manage online advertisement for Apple, Twitter and Facebook.
+      Working to tight deadlines with a fantastic team of developers I felt like
+      my confidence and skills as a developer sky rocketed.
+  - date: Mar 13 - Mar 14
+    position: Software Developer
+    employer: Cyber Interactive
+    description: At Cyber, I had the chance to work for a small but busy web
+      agency in the heart of London. Working within an Agile environment, I had
+      the chance to work with some large clients such as the RBS, JLL and Aviva.
+  - date: Oct 07 - Mar 13
+    position: Junior Software Developer
+    employer: CFS Europe
+    description: I first started working for CFS-Europe as a Hardware and
+      Network assistant. Over the years, combining my knowledge of the company
+      products with the skills I earned during my degree, I managed to work my
+      way up to the development team in a junior position. Although a small
+      company, some of their clients ranged among the NHS, Argos and Orange.
+other: Other jobs included IT Support/Helpdesk, hospitality and family business.
+education:
+  - date: Sep 12 - Jun 15
+    subject: BSc Computing
+    institution: Birkbeck University of London
+    grade: First Hons
+    description: This course covers the typical UK undergraduate curriculum in
+      computing. After gaining a taste for functional programming, for my final
+      assignment, I created a Hybrid app that explores a recursive NP complex
+      problem.
+  - date: Sep 08 - Jun 11
+    subject: FD Web Technologies
+    institution: Birkbeck University of London
+    grade: Distinction
+    description: This course covered most major topics in web development such
+      as Web Standards, Typography, Relational Databases and Object Oriented
+      Programming. For my final assignment, I developed a stock management tool.
+  - date: Feb 07 - Dec 07
+    subject: Hardware & Software
+    institution: Lewisham College
+    grade: Distinction
+    description: This two stages course focused on principles of electronic
+      engineering, operating systems and computer networks mixing a good blend
+      of practical and theoretical work.
+complex_skills:
+  - title: Software Skills
+    inner_skill:
+      - title: Languages
+        stars:
+          - title: JavaScript
+            stars: 5
+          - title: HTML/CSS
+            stars: 5
+          - title: PHP
+            stars: 5
+          - title: SQL/MySQL
+            stars: 4
+          - title: noSQL/Mongo
+            stars: 4
+          - title: Typescript
+            stars: 4
+          - title: Elastic Search
+            stars: 3
+          - title: Java
+            stars: 3
+          - title: Scheme
+            stars: 2
+      - title: Frameworks
+        stars:
+          - title: Angular JS/2/4/5
+            stars: 5
+          - title: Ionic
+            stars: 5
+          - title: jQuery
+            stars: 5
+          - title: Bootstrap
+            stars: 5
+          - title: SASS
+            stars: 5
+          - title: Jekyll
+            stars: 5
+          - title: Material Design
+            stars: 4
+          - title: React/Redux
+            stars: 4
+          - title: Apollo
+            stars: 4
+          - title: Meteor
+            stars: 4
+          - title: GraphCool/Prisma
+            stars: 3
+          - title: Laravel
+            stars: 3
+          - title: Symfony
+            stars: 3
+      - title: Other
+        stars:
+          - title: Git
+            stars: 5
+          - title: UX/SketchApp
+            stars: 5
+          - title: Gulp/Webpack
+            stars: 4
+          - title: UNIX
+            stars: 4
+          - title: Jest
+            stars: 3
+          - title: GraphQL
+            stars: 3
+          - title: Cypress/Puppeteer
+            stars: 3
+          - title: Docker
+            stars: 2
+simple_skills:
+  - title: Soft Skills
+    stars:
+      - title: Flexibility
+        stars: 5
+      - title: Attention to detail
+        stars: 4
+      - title: Communication
+        stars: 4
+  - title: Languages
+    stars:
+      - title: English
+        stars: 5
+      - title: Portuguese
+        stars: 5
+other_skills:
+  - icon: fa fa-plane fa-fw
+    label: Italian / Brazilian
+  - icon: fa fa-car fa-fw
+    label: UK Driving License
+  - icon: fa fa-users fa-fw
+    label: References upon request

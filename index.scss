@@ -122,6 +122,42 @@ em {
 
 
 /*
+ * Grid
+ */
+.lines {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-left: 2px;
+}
+
+.horizontal {
+  height: 8px;
+  margin-bottom: 8px;
+  background: rgba(0, 0, 255, .3);
+}
+
+.vertical {
+  width: 8px;
+  float: left;
+  height: 100%;
+  margin-right: 8px;
+  background: rgba(0, 0, 255, .3);
+}
+
+.vertical-last {
+  width: 2px;
+  float: left;
+  height: 100%;
+  background: rgba(0, 0, 255, .3);
+}
+
+
+/*
  * Sections
  */
 .header {
