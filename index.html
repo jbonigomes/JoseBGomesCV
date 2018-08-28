@@ -7,129 +7,109 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-<body class="p-b-10">
-  <div class="full header list-group m-b-10">
+<body>
+  <div class="contact flex flex-distribute">
     {{#each contact}}
-    <a href="{{link}}" class="list-group-item">
-      <i class="{{class}}"></i>
-      {{label}}
-    </a>
+    <a href="{{link}}"><i class="{{class}}"></i> {{label}}</a>
     {{/each}}
   </div>
 
-  <div class="full title-cols">
-    <div class="left">
-      <h1>{{name}}</h1>
-      <h2>{{profession}}</h2>
+  <section>
+    <div class="flex">
+      <div class="flex-responsive">
+        <div class="name">{{name}}</div>
+        <div class="profession">{{profession}}</div>
+      </div>
+
+      <div class="flex-fixed-100">
+        <div class="flex">
+          <i class="fa fa-home fa-lg flex-fixed-20"></i>
+          <div class="flex-responsive">
+            {{#each address}}
+              {{this}}<br>
+            {{/each}}
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="right">
-      <div class="full address-cols">
-        <div class="left"><i class="fa fa-home fa-lg"></i></div>
-        <div class="right">
-          {{#each address}}
-            {{this}}<br>
+
+    <div class="statement">{{personal_statement}}</div>
+
+    <div class="flex">
+      <div class="flex-responsive">
+        <div class="title"><i class="fa fa-plus"></i> Career</div>
+
+        {{#each employment}}
+        <div>
+          <div>
+            <div><b>{{date}}</b></div>
+            <div><em>{{position}}</em></div>
+            <div>{{employer}}</div>
+          </div>
+          <div>{{description}}</div>
+        </div>
+        {{/each}}
+
+        <div>
+          <div><b>Other</b></div>
+          <div>{{other}}</div>
+        </div>
+
+        <div class="title"><i class="fa fa-plus"></i> Education</div>
+
+        {{#each education}}
+        <div>
+          <div>{{grade}}</div>
+          <div>
+            <div><b>{{date}}</b></div>
+            <div><em>{{subject}}</em></div>
+            <div>{{institution}}</div>
+          </div>
+          <div>{{description}}</div>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="flex-gutter"></div>
+
+      <div class="flex-fixed-150">
+        {{#each complex_skills}}
+        <div>
+          <div class="title"><i class="fa fa-plus"></i> {{title}}</div>
+
+          {{#each inner_skill}}
+          <div>
+            <div><b><em>.{{title}}</em></b></div>
+
+            {{#each stars}}
+            <div class="flex">
+              <div class="flex-responsive">{{title}}</div>
+              <div class="flex-fixed-70">{{#stars stars}}{{/stars}}</div>
+            </div>
+            {{/each}}
+          </div>
           {{/each}}
         </div>
-      </div>
-    </div>
-  </div>
+        {{/each}}
 
-  <div class="full description">
-    {{personal_statement}}
-  </div>
-
-  <div class="full layout-cols">
-    <div class="left p-l-10 p-r-15">
-      <div class="full">
-        <h3><i class="fa fa-plus"></i> Career</h3>
-      </div>
-
-      {{#each employment}}
-      <div class="full content-cols">
-        <div class="left p-l-10 p-b-5">
-          <div><b>{{date}}</b></div>
-          <div><em>{{position}}</em></div>
-          <div>{{employer}}</div>
-        </div>
-        <div class="right">
-          {{description}}
-        </div>
-      </div>
-      {{/each}}
-
-      <div class="full content-cols m-t-10">
-        <div class="left p-l-10 p-b-5">
-          <div><b>Other</b></div>
-        </div>
-        <div class="right">
-          {{other}}
-        </div>
-      </div>
-
-      <div class="full m-t-10">
-        <h3><i class="fa fa-plus"></i> Education</h3>
-      </div>
-
-      {{#each education}}
-      <div class="full content-cols">
-        <div class="left p-l-10 p-b-5">
-          <div><b>{{date}}</b></div>
-          <div><em>{{subject}}</em></div>
-          <div>{{institution}}</div>
-          <div class="grade">{{grade}}</div>
-        </div>
-        <div class="right">
-          {{description}}
-        </div>
-      </div>
-      {{/each}}
-    </div>
-
-    <div class="right">
-      {{#each complex_skills}}
-      <div class="full">
-        <h3><i class="fa fa-plus"></i> {{title}}</h3>
-      </div>
-
-        {{#each inner_skill}}
-        <div class="full p-l-10">
-          <b><em>.{{title}}</em></b>
-        </div>
+        {{#each simple_skills}}
+        <div>
+          <div class="title"><i class="fa fa-plus"></i> {{title}}</div>
 
           {{#each stars}}
-          <div class="full star-cols p-l-10">
-            <div class="left">{{title}}</div>
-            <div class="right">
-              {{#stars stars}}{{/stars}}
-            </div>
+          <div>
+            <div>{{title}}</div>
+            <div>{{#stars stars}}{{/stars}}</div>
           </div>
           {{/each}}
-        {{/each}}
-      {{/each}}
-
-      {{#each simple_skills}}
-      <div class="full">
-        <h3><i class="fa fa-plus"></i> {{title}}</h3>
-      </div>
-
-        {{#each stars}}
-        <div class="full star-cols p-l-10">
-          <div class="left">{{title}}</div>
-          <div class="right">
-            {{#stars stars}}{{/stars}}
-          </div>
         </div>
         {{/each}}
-      {{/each}}
 
-      <div class="full list-group m-t-10 p-l-10">
         {{#each other_skills}}
-        <div class="list-group-item">
-          <i class="{{icon}}"></i> {{label}}
-        </div>
+        <div><i class="{{icon}}"></i> {{label}}</div>
         {{/each}}
       </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>

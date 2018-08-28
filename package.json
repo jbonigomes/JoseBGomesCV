@@ -16,8 +16,8 @@
     "write-good": "^0.13.1"
   },
   "scripts": {
-    "pdf": "node index.js; open index.pdf",
     "write-good": "node write-good.js",
-    "spell-check": "node spellchecker.js"
+    "spell-check": "node spell-checker.js",
+    "pdf": "node index.js; open index.pdf"
   }
 }

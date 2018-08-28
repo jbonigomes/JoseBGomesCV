@@ -6,33 +6,9 @@ $light:    #FFF;
 $medium:   #CCC;
 $emphasis: #D50;
 
-
-/*
- * Column widths
- */
-$star-cols:    50%;
-$title-cols:   80%;
-$layout-cols:  75%;
-$address-cols: 12%;
-$content-cols: 30%;
-
-
-/*
- * Adjustments
- */
-$links-space: 10px;
-$header-squeeze: 0;
-
-$header-offset: 220px;
-
-$intro-squeeze: 95px;
-
-
-/*
- * Resets/Typography
- */
 body {
   margin: 0;
+  padding: 0;
   color: $dark;
   font-size: 8px;
   font-weight: 300;
@@ -41,187 +17,96 @@ body {
   border-bottom: 2px solid $dark;
 }
 
-img {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 45px;
-  font-weight: 700;
-  color: $emphasis;
-  line-height: 40px;
-  text-align: center;
-}
-
-h2 {
-  color: $medium;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-  margin-left: $header-offset;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-
-  i {
-    color: $emphasis;
-    vertical-align: 2px;
-    font-size: 10px !important;
-    font-weight: 300 !important;
-  }
-}
-
-b {
-  font-weight: 700;
+section {
+  padding: 16px;
 }
 
 em {
   color: $emphasis;
-  font-style: normal;
 }
 
+/* Layout */
+.flex {
+  display: flex;
+  flex-direction: row;
 
-/*
- * Helpers
- */
-.m-t-5 {
-  margin-top: 5px;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
 }
 
-.m-t-10 {
-  margin-top: 10px;
+.flex-distribute {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
 }
 
-.m-b-10 {
-  margin-bottom: 10px;
+.flex-gutter {
+  flex: 0 0 20px;
+  -webkit-flex: 0 0 20px;
 }
 
-.p-r-15 {
-  padding-right: 15px;
+.flex-responsive {
+  flex: 1;
+  -webkit-flex: 1;
 }
 
-.p-l-10 {
-  padding-left: 10px;
+.flex-fixed-20 {
+  flex: 0 0 20px;
+  -webkit-flex: 0 0 20px;
 }
 
-.p-b-10 {
-  padding-bottom: 10px;
+.flex-fixed-70 {
+  flex: 0 0 70px;
+  -webkit-flex: 0 0 70px;
 }
 
-.p-b-5 {
-  padding-bottom: 5px;
+.flex-fixed-100 {
+  flex: 0 0 100px;
+  -webkit-flex: 0 0 100px;
 }
 
-
-/*
- * Grid
- */
-.lines {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  margin-left: 2px;
+.flex-fixed-150 {
+  flex: 0 0 150px;
+  -webkit-flex: 0 0 150px;
 }
 
-.horizontal {
-  height: 8px;
-  margin-bottom: 8px;
-  background: rgba(0, 0, 255, .3);
-}
-
-.vertical {
-  width: 8px;
-  float: left;
-  height: 100%;
-  margin-right: 8px;
-  background: rgba(0, 0, 255, .3);
-}
-
-.vertical-last {
-  width: 2px;
-  float: left;
-  height: 100%;
-  background: rgba(0, 0, 255, .3);
-}
-
-
-/*
- * Sections
- */
-.header {
+/* Decorators */
+.contact {
   background: $dark;
-  padding: 2px $header-squeeze 0 $header-squeeze;
+  padding: 2px 8px 0 8px;
 
-  a,
-  a:hover,
-  a:active,
-  a:visited {
-    float: left;
+  a {
     color: $light;
-    display: block;
-    font-size: 8px;
     text-decoration: none;
-    margin: 0 $links-space;
   }
 }
 
-.description {
-  margin: 10px;
+.name {
+  font-size: 24px;
+  color: $emphasis;
+  padding-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profession {
+  color: $medium;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 16px;
+
+  i {
+    font-size: 12px;
+    color: $emphasis;
+  }
+}
+
+.statement {
+  padding: 8px 100px;
   text-align: center;
-  padding: 8px $intro-squeeze;
+  margin: 10px 0 2px 0;
   border-top: 2px dotted $medium;
   border-bottom: 2px dotted $medium;
 }
-
-.grade {
-  top: 0;
-  left: 0;
-  width: 60px;
-  font-size: 5px;
-  margin-left: -25px;
-  position: absolute;
-  font-style: italic;
-  letter-spacing: 1px;
-
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-
-/*
- * Layout
- */
-.full {
-  clear: both;
-  overflow: hidden;
-}
-
-.left, .right {
-  float: left;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.title-cols   .left { width: $title-cols; }
-.layout-cols  .left { width: $layout-cols; }
-.address-cols .left { width: $address-cols; }
-.content-cols .left { width: $content-cols; }
-.star-cols    .left { width: $star-cols !important; }
-
-.title-cols   .right { width: calc(100% - #{$title-cols}); }
-.layout-cols  .right { width: calc(100% - #{$layout-cols}); }
-.address-cols .right { width: calc(100% - #{$address-cols}); }
-.content-cols .right { width: calc(100% - #{$content-cols}); }
-.star-cols    .right { width: calc(100% - #{$star-cols}) !important; }
