@@ -73,26 +73,7 @@
       <div class="flex-gutter"></div>
 
       <div class="flex-fixed-150">
-        {{#each complex_skills}}
-        <div>
-          <div class="title"><i class="fa fa-plus"></i> {{title}}</div>
-
-          {{#each inner_skill}}
-          <div>
-            <div><b><em>.{{title}}</em></b></div>
-
-            {{#each stars}}
-            <div class="flex">
-              <div class="flex-responsive">{{title}}</div>
-              <div class="flex-fixed-70">{{#stars stars}}{{/stars}}</div>
-            </div>
-            {{/each}}
-          </div>
-          {{/each}}
-        </div>
-        {{/each}}
-
-        {{#each simple_skills}}
+        {{#each skills}}
         <div>
           <div class="title"><i class="fa fa-plus"></i> {{title}}</div>
 

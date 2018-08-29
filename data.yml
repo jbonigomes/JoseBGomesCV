@@ -28,11 +28,11 @@ employment:
   - date: Sep 18 - date
     position: JavaScript Engineer
     employer: Barclays
-    description: I took this new challenge as a JavaScript Engineer for the
-      channels engineering team at Barclays. I don't yet know the what this new
-      position will bring, but I see it as a big opportunity to take part on
-      developing software that has a strong impact on customers while working
-      for a world class team.
+    description: I took this new challenge working as part of the channels
+      engineering team at Barclays. I don't yet know what this position will
+      bring, but I see it as a big opportunity to take part on developing
+      software that has a strong impact on customers while working for a
+      renowned world class team.
   - date: Jan 17 - Sep 18
     position: Software Developer
     employer: Cybertill Ltd
@@ -50,10 +50,10 @@ employment:
       opportunities, I choose the flexibility of remote work. During that
       period, I also co founded Backbone Labs, a company aimed at developing a
       digitised version of RushHourCrush (a section from a famous newspaper in
-      the UK). Along with that, I had the chance to work with well renowned
-      digital agencies, such as Cyber Interactive, Capella and Thinkup.io
-      (former Believe Creative) working on projects for large clients among
-      Nominent, Greenergy and Future First.
+      the UK). Along with that, I had the chance to work with a few well
+      established digital agencies, such as Cyber Interactive, Capella and
+      Thinkup.io (former Believe Creative), working on projects for large
+      clients among Nominent, Greenergy and Future First.
   - date: Mar 14 - Aug 14
     position: Application Developer
     employer: Upcast Social
@@ -101,80 +101,93 @@ education:
     description: This two stages course focused on principles of electronic
       engineering, operating systems and computer networks mixing a good blend
       of practical and theoretical work.
-complex_skills:
-  - title: Software Skills
-    inner_skill:
-      - title: Languages
-        stars:
-          - title: JavaScript
-            stars: 5
-          - title: HTML/CSS
-            stars: 5
-          - title: PHP
-            stars: 5
-          - title: SQL/MySQL
-            stars: 4
-          - title: noSQL/Mongo
-            stars: 4
-          - title: Typescript
-            stars: 4
-          - title: Elastic Search
-            stars: 3
-          - title: Java
-            stars: 3
-          - title: Scheme
-            stars: 2
-      - title: Frameworks
-        stars:
-          - title: Angular JS/2/4/5
-            stars: 5
-          - title: Ionic
-            stars: 5
-          - title: jQuery
-            stars: 5
-          - title: Bootstrap
-            stars: 5
-          - title: SASS
-            stars: 5
-          - title: Jekyll
-            stars: 5
-          - title: Material Design
-            stars: 4
-          - title: React/Redux
-            stars: 4
-          - title: Apollo
-            stars: 4
-          - title: Meteor
-            stars: 4
-          - title: GraphCool/Prisma
-            stars: 3
-          - title: Laravel
-            stars: 3
-          - title: Symfony
-            stars: 3
-      - title: Other
-        stars:
-          - title: Git
-            stars: 5
-          - title: Gulp/Webpack
-            stars: 4
-          - title: UNIX
-            stars: 4
-          - title: Puppeteer
-            stars: 4
-          - title: UI/UX
-            stars: 3
-          - title: Jest
-            stars: 3
-          - title: GraphQL
-            stars: 3
-          - title: Cypress
-            stars: 3
-          - title: Electron
-            stars: 2
-          - title: Docker
-            stars: 2
-simple_skills:
+skills:
+  - title: Tech Skills
+    stars:
+      - title: JavaScript/ESNext
+        stars: 5
+      - title: Node.JS
+        stars: 5
+      - title: Angular JS/2/4/5
+        stars: 5
+      - title: Ionic
+        stars: 5
+      - title: jQuery
+        stars: 5
+      - title: Bootstrap
+        stars: 5
+      - title: SASS
+        stars: 5
+      - title: Jekyll
+        stars: 5
+      - title: HTML/CSS
+        stars: 5
+      - title: Git
+        stars: 5
+      - title: Gulp/Webpack
+        stars: 4
+      - title: UNIX
+        stars: 4
+      - title: PHP
+        stars: 4
+      - title: SQL/MySQL
+        stars: 4
+      - title: noSQL/Mongo
+        stars: 4
+      - title: Typescript
+        stars: 4
+      - title: Material Design
+        stars: 4
+      - title: React/Redux
+        stars: 4
+      - title: Apollo
+        stars: 4
+      - title: Meteor
+        stars: 4
+      - title: Puppeteer
+        stars: 4
+      - title: NPM/Yarn
+        stars: 4
+      - title: Elastic Search
+        stars: 3
+      - title: GraphCool/Prisma
+        stars: 3
+      - title: Snipcart
+        stars: 3
+      - title: Laravel
+        stars: 3
+      - title: Symfony
+        stars: 3
+      - title: Design Patterns
+        stars: 3
+      - title: Object Orientation
+        stars: 3
+      - title: Functional Programming
+        stars: 3
+      - title: JAM Stack
+        stars: 3
+      - title: UI/UX
+        stars: 3
+      - title: GraphQL
+        stars: 3
+      - title: Jest
+        stars: 3
+      - title: Cypress
+        stars: 3
+      - title: Tape
+        stars: 2
+      - title: Java
+        stars: 2
+      - title: Scheme
+        stars: 2
+      - title: Ruby
+        stars: 2
+      - title: Python
+        stars: 2
+      - title: Electron
+        stars: 2
+      - title: Docker
+        stars: 2
   - title: Soft Skills
     stars:
       - title: Flexibility
@@ -183,7 +196,7 @@ simple_skills:
         stars: 4
       - title: Communication
         stars: 4
-  - title: Languages
+  - title: Language Skills
     stars:
       - title: English
         stars: 5
