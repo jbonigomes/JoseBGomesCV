@@ -77,31 +77,7 @@ const spellCheckEdu = async (edu) => {
   return res;
 };
 
-const spellcheckComplex = async (skills) => {
-  const res = [];
-
-  for (let i = 0; i < skills.length; i++) {
-    const innerSkills = [];
-
-    for (let j = 0; j < skills[0].inner_skill.length; j++) {
-      innerSkills.push({
-        title: await spellchecker(skills[i].inner_skill[j].title),
-        stars: await spellchecker(skills[i].inner_skill[j].stars.map(star => {
-          return star.title;
-        }).join(', ')),
-      });
-    }
-
-    res.push({
-      inner_skill: innerSkills,
-      title: await spellchecker(skills[i].title),
-    });
-  }
-
-  return res;
-};
-
-const spellcheckSimple = async (skills) => {
+const spellcheckSkills = async (skills) => {
   const res = [];
 
   for (let i = 0; i < skills.length; i++) {
@@ -130,8 +106,7 @@ const res = async () => ({
   employment: await spellCheckJobs(data.employment),
   other: await spellchecker(data.other),
   education: await spellCheckEdu(data.education),
-  complex_skills: await spellcheckComplex(data.complex_skills),
-  simple_skills: await spellcheckSimple(data.simple_skills),
+  skills: await spellcheckSkills(data.skills),
   other_skills: await spellcheckOther(data.other_skills)
 });
 
@@ -144,6 +119,7 @@ const res = async () => ({
     'BSc',
     'RBS',
     'NHS',
+    'NPM',
     'CLI',
     'VBA',
     'JLL',
@@ -158,11 +134,13 @@ const res = async () => ({
     'Aviva',
     'jQuery',
     'Upcast',
+    'Node.js',
     'Symfony',
     'GraphQL',
     'Cordova',
     'MongoDB',
     'Laravel',
+    'Snipcart',
     'Nominent',
     'Firebase',
     'Greenergy',

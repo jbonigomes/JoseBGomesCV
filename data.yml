@@ -50,10 +50,10 @@ employment:
       opportunities, I choose the flexibility of remote work. During that
       period, I also co founded Backbone Labs, a company aimed at developing a
       digitised version of RushHourCrush (a section from a famous newspaper in
-      the UK). Along with that, I had the chance to work with a few well
-      established digital agencies, such as Cyber Interactive, Capella and
-      Thinkup.io (former Believe Creative), working on projects for large
-      clients among Nominent, Greenergy and Future First.
+      the UK). Along with that, I had the chance to work with well established
+      digital agencies, such as Cyber Interactive, Capella and Thinkup.io
+      (former Believe Creative), working on projects for large clients among
+      Nominent, Greenergy and Future First.
   - date: Mar 14 - Aug 14
     position: Application Developer
     employer: Upcast Social
@@ -106,7 +106,7 @@ skills:
     stars:
       - title: JavaScript/ESNext
         stars: 5
-      - title: Node.JS
+      - title: Node.js
         stars: 5
       - title: Angular JS/2/4/5
         stars: 5
