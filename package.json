@@ -18,6 +18,7 @@
   "scripts": {
     "write-good": "node write-good.js",
     "spell-check": "node spell-checker.js",
-    "pdf": "node index.js; open index.pdf"
+    "pdf": "node index.js; open index.pdf",
+    "resign": "html-pdf resignation.html resignation.pdf; open resignation.pdf"
   }
 }
