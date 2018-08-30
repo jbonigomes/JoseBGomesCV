@@ -76,7 +76,7 @@ employment:
       hard work and the skills I earned during my degree, I managed to work my
       way up to the development team. Although a small company, some of the
       clients I worked with ranged among the NHS, Argos and Orange.
-other: Other jobs included IT Support / Helpdesk, hospitality & family business.
+other: Other jobs included IT Support / Help-desk, hospitality & family business.
 education:
   - date: Sep 12 - Jun 15
     subject: BSc Computing
@@ -129,7 +129,7 @@ skills:
         stars: 4
       - title: SQL / MySQL
         stars: 4
-      - title: noSQL / Mongo
+      - title: noSQL / MongoDB
         stars: 4
       - title: Typescript
         stars: 4

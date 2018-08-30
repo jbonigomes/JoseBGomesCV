@@ -1,7 +1,5 @@
 *.pdf
-index.css
-index.css.map
-.sass-cache
+node_modules
 
 # Apple files
 .DS_Store
@@ -28,6 +26,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-node_modules
-
