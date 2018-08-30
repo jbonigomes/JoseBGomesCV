@@ -5,7 +5,7 @@ const yml = require('js-yaml');
 const Nodehun = require('nodehun');
 const spellcheck = require('nodehun-sentences');
 
-const data = yml.safeLoad(fs.readFileSync('./data.yml', 'utf8'));
+const data = yml.safeLoad(fs.readFileSync('./index.yml', 'utf8'));
 
 const dictionaryPath = path.join(
   __dirname,

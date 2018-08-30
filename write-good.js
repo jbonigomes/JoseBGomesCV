@@ -3,7 +3,7 @@ const util = require('util');
 const yml = require('js-yaml');
 const writeGood = require('write-good');
 
-const data = yml.safeLoad(fs.readFileSync('./data.yml', 'utf8'));
+const data = yml.safeLoad(fs.readFileSync('./index.yml', 'utf8'));
 
 const suggestions = {
   profession: writeGood(data.profession, { eprime: true }),

@@ -5,7 +5,7 @@ const sass = require('node-sass');
 const handlebars = require('handlebars');
 
 const htmlString = fs.readFileSync('./index.html', 'utf8');
-const data = yml.safeLoad(fs.readFileSync('./data.yml', 'utf8'));
+const data = yml.safeLoad(fs.readFileSync('./index.yml', 'utf8'));
 const styles = sass.renderSync({ file: 'index.scss' }).css.toString();
 
 handlebars.registerHelper('stars', (numberOfStars) => {

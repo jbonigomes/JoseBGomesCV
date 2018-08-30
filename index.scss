@@ -14,7 +14,6 @@ body {
   font-weight: 300;
   line-height: 14px;
   font-family: arial;
-  border-bottom: 2px solid $dark;
 }
 
 section {
@@ -23,6 +22,23 @@ section {
 
 em {
   color: $emphasis;
+}
+
+/* Helpers */
+.m-b-8 {
+  margin-bottom: 8px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.relative {
+  position: relative;
 }
 
 /* Layout */
@@ -40,8 +56,8 @@ em {
 }
 
 .flex-gutter {
-  flex: 0 0 20px;
-  -webkit-flex: 0 0 20px;
+  flex: 0 0 16px;
+  -webkit-flex: 0 0 16px;
 }
 
 .flex-responsive {
@@ -49,32 +65,19 @@ em {
   -webkit-flex: 1;
 }
 
-.flex-fixed-20 {
-  flex: 0 0 20px;
-  -webkit-flex: 0 0 20px;
-}
-
-.flex-fixed-70 {
-  flex: 0 0 70px;
-  -webkit-flex: 0 0 70px;
-}
-
-.flex-fixed-100 {
-  flex: 0 0 100px;
-  -webkit-flex: 0 0 100px;
-}
-
-.flex-fixed-150 {
-  flex: 0 0 150px;
-  -webkit-flex: 0 0 150px;
+@for $i from 15 to 150 {
+  .flex-fixed-#{$i} {
+    flex: 0 0 #{$i}px;
+    -webkit-flex: 0 0 #{$i}px;
+  }
 }
 
 /* Decorators */
-.contact {
+.banner {
   background: $dark;
-  padding: 2px 8px 0 8px;
+  padding: 2px 16px 0 16px;
 
-  a {
+  a, span {
     color: $light;
     text-decoration: none;
   }
@@ -83,24 +86,44 @@ em {
 .name {
   font-size: 24px;
   color: $emphasis;
-  padding-top: 10px;
+  line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .profession {
   color: $medium;
-  padding: 5px 0;
   font-size: 14px;
+  padding-top: 5px;
 }
 
 .title {
+  margin: 8px 0;
   font-size: 16px;
 
   i {
     font-size: 12px;
     color: $emphasis;
   }
+}
+
+.address {
+  div {
+    line-height: 10px;
+  }
+
+  i {
+    padding-top: 2px;
+  }
+}
+
+.grade {
+  top: 14px;
+  left: -24px;
+  color: $medium;
+  position: absolute;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
 
 .statement {

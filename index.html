@@ -8,7 +8,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-  <div class="contact flex flex-distribute">
+  <div class="banner flex flex-distribute">
     {{#each contact}}
     <a href="{{link}}"><i class="{{class}}"></i> {{label}}</a>
     {{/each}}
@@ -21,12 +21,12 @@
         <div class="profession">{{profession}}</div>
       </div>
 
-      <div class="flex-fixed-100">
-        <div class="flex">
-          <i class="fa fa-home fa-lg flex-fixed-20"></i>
+      <div class="flex-fixed-80">
+        <div class="flex address">
+          <i class="fa fa-home fa-lg flex-fixed-15"></i>
           <div class="flex-responsive">
             {{#each address}}
-              {{this}}<br>
+              <div>{{this}}</div>
             {{/each}}
           </div>
         </div>
@@ -40,57 +40,62 @@
         <div class="title"><i class="fa fa-plus"></i> Career</div>
 
         {{#each employment}}
-        <div>
-          <div>
+        <div class="flex m-b-8">
+          <div class="flex-fixed-100">
             <div><b>{{date}}</b></div>
             <div><em>{{position}}</em></div>
             <div>{{employer}}</div>
           </div>
-          <div>{{description}}</div>
+          <div class="flex-responsive text-justify">{{description}}</div>
         </div>
         {{/each}}
 
-        <div>
-          <div><b>Other</b></div>
-          <div>{{other}}</div>
+        <div class="flex">
+          <div class="flex-fixed-100"><b>Other</b></div>
+          <div class="flex-responsive">{{other}}</div>
         </div>
 
         <div class="title"><i class="fa fa-plus"></i> Education</div>
 
         {{#each education}}
-        <div>
-          <div>{{grade}}</div>
-          <div>
+        <div class="flex m-b-8">
+          <div class="flex-fixed-100 relative">
+            <div class="grade">{{grade}}</div>
             <div><b>{{date}}</b></div>
             <div><em>{{subject}}</em></div>
             <div>{{institution}}</div>
           </div>
-          <div>{{description}}</div>
+          <div class="flex-responsive text-justify">{{description}}</div>
         </div>
         {{/each}}
       </div>
 
       <div class="flex-gutter"></div>
 
-      <div class="flex-fixed-150">
+      <div class="flex-fixed-145">
         {{#each skills}}
         <div>
           <div class="title"><i class="fa fa-plus"></i> {{title}}</div>
 
           {{#each stars}}
-          <div>
-            <div>{{title}}</div>
-            <div>{{#stars stars}}{{/stars}}</div>
+          <div class="flex">
+            <div class="flex-responsive">{{title}}</div>
+            <div class="flex-fixed-55 text-right">
+              {{#stars stars}}{{/stars}}
+            </div>
           </div>
           {{/each}}
         </div>
         {{/each}}
 
-        {{#each other_skills}}
-        <div><i class="{{icon}}"></i> {{label}}</div>
-        {{/each}}
       </div>
     </div>
   </section>
+
+  <div class="banner flex flex-distribute">
+    {{#each other_skills}}
+      <span><i class="{{icon}}"></i> {{label}}</span>
+    {{/each}}
+  </div>
 </body>
 </html>

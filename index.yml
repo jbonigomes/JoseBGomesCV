@@ -34,11 +34,11 @@ employment:
       software that has a strong impact on customers while working for a
       renowned world class team.
   - date: Jan 17 - Sep 18
-    position: Software Developer
+    position: Senior Developer
     employer: Cybertill Ltd
     description: Working for Cybertill Ltd, I had the challenge to help
       modernising a large multi-channel retail and ePOS system written in
-      Symfony/PHP. As most legacy software, issues revolved around performance
+      PHP / Symfony. As most legacy software, issues revolved around performance
       and maintainability. I tackled some of those issues proposing and
       introducing new technologies, such as Angular, Typescript, Elastic Search
       and GraphQL.
@@ -69,19 +69,18 @@ employment:
       the chance to interact with some large clients such as the RBS, JLL and
       Aviva.
   - date: Oct 07 - Mar 13
-    position: Junior Software Developer
+    position: Junior Developer
     employer: CFS Europe
     description: I first started working for CFS-Europe as a Hardware and
       Network assistant. Over the years, combining my knowledge of the company,
       hard work and the skills I earned during my degree, I managed to work my
-      way up to the development team in a junior position. Although a small
-      company, some of the clients I worked with ranged among the NHS, Argos and
-      Orange.
-other: Other jobs included IT Support/Helpdesk, hospitality and family business.
+      way up to the development team. Although a small company, some of the
+      clients I worked with ranged among the NHS, Argos and Orange.
+other: Other jobs included IT Support / Helpdesk, hospitality & family business.
 education:
   - date: Sep 12 - Jun 15
     subject: BSc Computing
-    institution: Birkbeck University of London
+    institution: Birkbeck University
     grade: First Hons
     description: This course covers the typical UK undergraduate curriculum in
       computing. After gaining a taste for functional programming, for my final
@@ -89,7 +88,7 @@ education:
       problem.
   - date: Sep 08 - Jun 11
     subject: FD Web Technologies
-    institution: Birkbeck University of London
+    institution: Birkbeck University
     grade: Distinction
     description: This course covered most major topics in web development such
       as Web Standards, Typography, Relational Databases and Object Oriented
@@ -104,41 +103,37 @@ education:
 skills:
   - title: Tech Skills
     stars:
-      - title: JavaScript/ESNext
+      - title: JavaScript (All) / Node.js
         stars: 5
-      - title: Node.js
-        stars: 5
-      - title: Angular JS/2/4/5
-        stars: 5
-      - title: Ionic
+      - title: Angular (All)
         stars: 5
       - title: jQuery
         stars: 5
-      - title: Bootstrap
+      - title: Bootstrap / Material
         stars: 5
-      - title: SASS
+      - title: SASS / SCSS
         stars: 5
-      - title: Jekyll
+      - title: Jekyll / JAM Stack
         stars: 5
-      - title: HTML/CSS
+      - title: HTML / CSS
         stars: 5
       - title: Git
         stars: 5
-      - title: Gulp/Webpack
+      - title: Ionic
+        stars: 4
+      - title: Webpack / Gulp / Grunt
         stars: 4
       - title: UNIX
         stars: 4
       - title: PHP
         stars: 4
-      - title: SQL/MySQL
+      - title: SQL / MySQL
         stars: 4
-      - title: noSQL/Mongo
+      - title: noSQL / Mongo
         stars: 4
       - title: Typescript
         stars: 4
-      - title: Material Design
-        stars: 4
-      - title: React/Redux
+      - title: React / Redux
         stars: 4
       - title: Apollo
         stars: 4
@@ -146,17 +141,19 @@ skills:
         stars: 4
       - title: Puppeteer
         stars: 4
-      - title: NPM/Yarn
+      - title: NPM / Yarn
+        stars: 4
+      - title: Docker / Vagrant
         stars: 4
       - title: Elastic Search
         stars: 3
-      - title: GraphCool/Prisma
+      - title: GraphCool / Prisma
         stars: 3
       - title: Snipcart
         stars: 3
-      - title: Laravel
+      - title: Laravel / Symfony
         stars: 3
-      - title: Symfony
+      - title: Election
         stars: 3
       - title: Design Patterns
         stars: 3
@@ -164,9 +161,7 @@ skills:
         stars: 3
       - title: Functional Programming
         stars: 3
-      - title: JAM Stack
-        stars: 3
-      - title: UI/UX
+      - title: UI / UX
         stars: 3
       - title: GraphQL
         stars: 3
@@ -174,8 +169,6 @@ skills:
         stars: 3
       - title: Cypress
         stars: 3
-      - title: Tape
-        stars: 2
       - title: Java
         stars: 2
       - title: Scheme
@@ -183,10 +176,6 @@ skills:
       - title: Ruby
         stars: 2
       - title: Python
-        stars: 2
-      - title: Electron
-        stars: 2
-      - title: Docker
         stars: 2
   - title: Soft Skills
     stars:

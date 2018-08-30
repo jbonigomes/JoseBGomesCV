@@ -1,14 +1,18 @@
 # CV Builder for Jose B. Gomes
 
-## Requirements
+Dependencies:
 
-    $ npm install -g html-pdf
-    $ gem install sass
+- Yarn
+- Node > 8
 
-## Buiding the PDF
+## Get started:
+    $ yarn install
 
-    $ sass index.scss index.css; html-pdf index.html index.pdf; open index.pdf
+## Compile PDF
+    $ yarn run pdf
 
-## Building the resignation letter
+## Check spelling:
+    $ yarn run spell-check
 
-    $ html-pdf resignation.html resignation.pdf; open resignation.pdf
+## Check grammar
+    $ yarn run write-good
