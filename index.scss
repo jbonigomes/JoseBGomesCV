@@ -1,5 +1,6 @@
 /* Colours */
 $dark: #345;
+$fair: #EEE;
 $light: #FFF;
 $medium: #CCC;
 $emphasis: #D50;
@@ -71,14 +72,19 @@ em {
 }
 
 /* Decorators */
-.banner {
+.contact {
   background: $dark;
   padding: 2px 16px 0 16px;
 
-  a, span {
+  a {
     color: $light;
     text-decoration: none;
   }
+}
+
+.other {
+  background: $fair;
+  padding: 2px 16px 0 16px;
 }
 
 .name {
@@ -98,11 +104,6 @@ em {
 .title {
   margin: 8px 0;
   font-size: 16px;
-
-  i {
-    font-size: 12px;
-    color: $emphasis;
-  }
 }
 
 .address {
@@ -127,7 +128,7 @@ em {
 .statement {
   padding: 8px 100px;
   text-align: center;
-  margin: 10px 0 2px 0;
-  border-top: 2px dotted $medium;
-  border-bottom: 2px dotted $medium;
+  margin: 10px 0 4px 0;
+  border-top: 1px solid $fair;
+  border-bottom: 1px solid $fair;
 }
