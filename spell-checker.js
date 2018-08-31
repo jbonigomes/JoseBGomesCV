@@ -51,25 +51,30 @@ const addWords = (words) => {
   return Promise.all(promises);
 };
 
-const suggestions = async (data) => {
-  if (Array.isArray(data)) {
-    const res = [];
+const loopObject = async (data) => {
+  const res = {};
+  const keys = Object.keys(data);
 
-    for (let i = 0; i < data.length; i++) {
-      res.push(await suggestions(data[i]));
-    }
-
-    return res;
+  for (let i = 0; i < keys.length; i++) {
+    res[keys[i]] = await suggestions(data[keys[i]]);
   }
-  else if (typeof data === 'object') {
-    const res = {};
-    const keys = Object.keys(data);
 
-    for (let i = 0; i < keys.length; i++) {
-      res[keys[i]] = await suggestions(data[keys[i]]);
-    }
+  return res;
+};
 
-    return res;
+const loopArray = async (data) => {
+  const res = [];
+
+  for (let i = 0; i < data.length; i++) {
+    res.push(await suggestions(data[i]));
+  }
+
+  return res;
+};
+
+const suggestions = async (data) => {
+  if (typeof data === 'object') {
+    return Array.isArray(data) ? await loopArray(data) : await loopObject(data);
   }
 
   return await spellchecker(data);

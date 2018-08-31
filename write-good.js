@@ -5,12 +5,12 @@ const writeGood = require('write-good');
 
 const data = yml.safeLoad(fs.readFileSync('./index.yml', 'utf8'));
 
+const loopArray = data => data.map(_ => suggestions(_));
+const loopObject = data => Object.keys(data).map(_ => suggestions(data[_]));
+
 const suggestions = (data) => {
-  if (Array.isArray(data)) {
-    return data.map(_ => suggestions(_));
-  }
-  else if (typeof data === 'object') {
-    return Object.keys(data).map(_ => suggestions(data[_]));
+  if (typeof data === 'object') {
+    return Array.isArray(data) ? loopArray(data) : loopObject(data);
   }
 
   return writeGood(data, { eprime: true });
