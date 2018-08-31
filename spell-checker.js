@@ -5,6 +5,7 @@ const yml = require('js-yaml');
 const Nodehun = require('nodehun');
 const spellcheck = require('nodehun-sentences');
 
+const words = require('./words');
 const data = yml.safeLoad(fs.readFileSync('./index.yml', 'utf8'));
 
 const dictionaryPath = path.join(
@@ -50,113 +51,31 @@ const addWords = (words) => {
   return Promise.all(promises);
 };
 
-const spellCheckJobs = async (jobs) => {
-  const res = [];
+const suggestions = async (data) => {
+  if (Array.isArray(data)) {
+    const res = [];
 
-  for (let i = 0; i < jobs.length; i++) {
-    res.push({
-      position: await spellchecker(jobs[i].position),
-      description: await spellchecker(jobs[i].description),
-    });
+    for (let i = 0; i < data.length; i++) {
+      res.push(await suggestions(data[i]));
+    }
+
+    return res;
+  }
+  else if (typeof data === 'object') {
+    const res = {};
+    const keys = Object.keys(data);
+
+    for (let i = 0; i < keys.length; i++) {
+      res[keys[i]] = await suggestions(data[keys[i]]);
+    }
+
+    return res;
   }
 
-  return res;
+  return await spellchecker(data);
 };
-
-const spellCheckEdu = async (edu) => {
-  const res = [];
-
-  for (let i = 0; i < edu.length; i++) {
-    res.push({
-      grade: await spellchecker(edu[i].grade),
-      subject: await spellchecker(edu[i].subject),
-      description: await spellchecker(edu[i].description),
-    });
-  }
-
-  return res;
-};
-
-const spellcheckSkills = async (skills) => {
-  const res = [];
-
-  for (let i = 0; i < skills.length; i++) {
-    res.push({
-      title: await spellchecker(skills[i].title),
-      stars: await spellchecker(skills[i].stars.map(_ => _.title).join(', '))
-    });
-  }
-
-  return res;
-};
-
-const spellcheckOther = async (skills) => {
-  const res = [];
-
-  for (let i = 0; i < skills.length; i++) {
-    res.push(await spellchecker(skills[i].label));
-  }
-
-  return res;
-};
-
-const res = async () => ({
-  profession: await spellchecker(data.profession),
-  personal_statement: await spellchecker(data.personal_statement),
-  employment: await spellCheckJobs(data.employment),
-  other: await spellchecker(data.other),
-  education: await spellCheckEdu(data.education),
-  skills: await spellcheckSkills(data.skills),
-  other_skills: await spellcheckOther(data.other_skills)
-});
 
 (async () => {
-  await addWords([
-    'UX',
-    'UI',
-    'JS',
-    'PHP',
-    'BSc',
-    'RBS',
-    'NHS',
-    'NPM',
-    'CLI',
-    'VBA',
-    'JLL',
-    'CSS',
-    'SSRS',
-    'CSS3',
-    'SCSS',
-    'ePOS',
-    'Cyber',
-    'noSQL',
-    'MySQL',
-    'HTML5',
-    'Aviva',
-    'Redux',
-    'Prisma',
-    'jQuery',
-    'Upcast',
-    'Node.js',
-    'Symfony',
-    'GraphQL',
-    'Cordova',
-    'Webpack',
-    'MongoDB',
-    'Laravel',
-    'Snipcart',
-    'Nominent',
-    'Firebase',
-    'Greenergy',
-    'MediaMath',
-    'GraphCool',
-    'Cybertill',
-    'CFS-Europe',
-    'Thinkup.io',
-    'JavaScript',
-    'Codeigniter',
-    'RushHourCrush',
-  ]);
-
-  console.log(util.inspect(await res(), false, null));
+  await addWords(words);
+  console.log(util.inspect(await suggestions(data), false, null));
 })();

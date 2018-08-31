@@ -5,18 +5,15 @@ const writeGood = require('write-good');
 
 const data = yml.safeLoad(fs.readFileSync('./index.yml', 'utf8'));
 
-const suggestions = {
-  profession: writeGood(data.profession, { eprime: true }),
-  personal_statement: writeGood(data.personal_statement, { eprime: true }),
-  employment: data.employment.map(job => ({
-    position: writeGood(job.position, { eprime: true }),
-    description: writeGood(job.description, { eprime: true }),
-  })),
-  other: writeGood(data.other, { eprime: true }),
-  education: data.education.map(edu => ({
-    suject: writeGood(edu.subject, { eprime: true }),
-    description: writeGood(edu.description, { eprime: true }),
-  })),
+const suggestions = (data) => {
+  if (Array.isArray(data)) {
+    return data.map(_ => suggestions(_));
+  }
+  else if (typeof data === 'object') {
+    return Object.keys(data).map(_ => suggestions(data[_]));
+  }
+
+  return writeGood(data, { eprime: true });
 };
 
-console.log(util.inspect(suggestions, false, null));
+console.log(util.inspect(suggestions(data), false, null));
