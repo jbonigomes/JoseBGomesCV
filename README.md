@@ -16,3 +16,6 @@ Dependencies:
 
 ## Check grammar
     $ yarn run write-good
+
+## Compile resignation
+    $ yarn run resign

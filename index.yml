@@ -22,7 +22,7 @@ address:
   - Liverpool
   - UK
 personal_statement: Full stack software developer, passionate about exploring
-  cutting edge technologies that add value and deliver a delightful experience
+  cutting-edge technologies that add value and deliver a delightful experience
   to customers and their business
 employment:
   - date: Sep 18 - date
@@ -32,7 +32,7 @@ employment:
       engineering team at Barclays. I don't yet know what this position will
       bring, but I see it as a big opportunity to take part on developing
       software that has a strong impact on customers while working for a
-      renowned world class team.
+      renowned world-class team.
   - date: Jan 17 - Sep 18
     position: Senior Developer
     employer: Cybertill Ltd
@@ -46,9 +46,9 @@ employment:
     position: Freelancer / Entrepreneur
     employer: Various
     description: During my final year at university and my first year as a
-      graduate, while juggling academic assignments and client based
+      graduate, while juggling academic assignments and client-based
       opportunities, I choose the flexibility of remote work. During that
-      period, I also co founded Backbone Labs, a company aimed at developing a
+      period, I also co-founded Backbone Labs, a company aimed at developing a
       digitised version of RushHourCrush (a section from a famous newspaper in
       the UK). Along with that, I had the chance to work with well established
       digital agencies, such as Cyber Interactive, Capella and Thinkup.io
@@ -58,22 +58,22 @@ employment:
     position: Application Developer
     employer: Upcast Social
     description: At Upcast Social, I broaden and deepen my knowledge and
-      confidence in the realm of software development. Working in Agile
+      confidence in the realm of software development. Working in an Agile
       environment along with a talented team that delivered the tools to create
-      and manage online advertisement campaigns for Apple, Twitter and Facebook.
+      and manage online advertising campaigns for Apple, Twitter and, Facebook.
   - date: Mar 13 - Mar 14
     position: Software Developer
     employer: Cyber Interactive
     description: At Cyber, I had the chance to work for a small but busy web
       agency in the heart of London. Working within an Agile environment, I had
-      the chance to interact with some large clients such as the RBS, JLL and
+      the chance to interact with some large clients such as the RBS, JLL and,
       Aviva.
   - date: Oct 07 - Mar 13
     position: Junior Developer
     employer: CFS Europe
     description: I first started working for CFS-Europe as a Hardware and
       Network assistant. Over the years, combining my knowledge of the company,
-      hard work and the skills I earned during my degree, I managed to work my
+      hard work and, the skills I earned during my degree, I managed to work my
       way up to the development team. Although a small company, some of the
       clients I worked with ranged among the NHS, Argos and Orange.
 other: Other jobs included IT Support / Help-desk, hospitality & family business.
@@ -91,7 +91,7 @@ education:
     institution: Birkbeck University
     grade: Distinction
     description: This course covered most major topics in web development such
-      as Web Standards, Typography, Relational Databases and Object Oriented
+      as Web Standards, Typography, Relational Databases and, Object Oriented
       Programming. For my final assignment, I developed a stock management tool.
   - date: Feb 07 - Dec 07
     subject: Hardware & Software
