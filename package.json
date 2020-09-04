@@ -10,7 +10,7 @@
     "handlebars": "^4.0.11",
     "html-pdf": "^2.2.0",
     "js-yaml": "^3.12.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "nodehun": "^2.0.12",
     "nodehun-sentences": "^2.0.1",
     "write-good": "^0.13.1"
